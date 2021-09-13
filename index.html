@@ -1,0 +1,512 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>DevSecOps Roadmap</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Dev[SecOps]()
+                            Une transformation au delà du buzzword
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center"
+                             style="text-align: left;">
+                        <textarea data-template>
+                            ## Project Information
+                            Name : DevSecOps
+
+                            Detail :
+
+                                    2021 : Road map
+                                    2022 : Implementation
+                            Leader :
+
+                                    Business Solution
+
+                            Involved Department :
+
+                                    Platform Service
+                                    Architecture Digitalisation
+                                    Business Solution
+                                    Project Managment
+                        </textarea>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Les enjeux
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Vélocité
+                            Réduire le [T]()ime [T]()o [M]()arket et [T]()ime [T]()o [R]()epair
+
+                            Délivrer un service rapidement à l'utilisateur final
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Assurance
+                            Gagner en confiance dans le product delivery
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Qualité
+                            Améliorer la qualité en continu
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Innovation
+
+                            Faciliter l'expérimentation
+
+                            Se donner le droit à l'erreur, prendre l'échec
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Coût
+                            Une réduction de coût d'exploitation
+                            et de temps de déploiement
+                            pour les Systèmes d'Information de grande échelle
+                        </textarea>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## REX Dev[Ops]()
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Le contexte
+                            6 mois pour mettre en place un SI
+
+                            Date d'ouverture du service immuable
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Le périmètre du SI
+
+                            1. Site vitrine grand public
+
+                            2. Un back office client avec gestion de facturation
+
+                            3. Gestion des signaux émis par le terrain (IoT)
+
+                            4. Interopérabilité et médiation
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## L'organisation
+                            #### [SAFe pour 4 équipes SCRUM]()
+                            3 équipes DEV + 1 équipe OPS
+                            #### [Répartition géographique]()
+                            Montpellier, Paris, Toulouse
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Périmètre [DEV]()
+                            Architecture applicative
+
+                            Développement de fonctionnalités
+
+                            Code source / livrable(s)
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Périmètre [OPS]()
+                            Architecture physique
+
+                            Usine logicielle
+
+                            Provisionning d'infrastructure et applicatif
+
+                            Monitoring des environnements
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Stack Technologique
+                            ![](./images/stack-tech.png "stack technique")<!-- .element: class="plain" -->
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Automation
+                            Ne soyez pas l'esclave de votre infrastructure
+
+                            Note:
+                            Pour éviter tout gaspillage de temps,
+                            notre approche a été d'automatiser toutes taches répétitives et identifiées coûteuses
+                            Nous avons voulu éviter de nous retrouver avec des procédures de plusieurs centaines de pages,
+                            par environnement rédigées par des DEV et exécutées par des OPS
+                            Avec le risque qu'elles soient pas maintenues à jour ou exécutées avec des erreurs humaines
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center"
+                             style="text-align: right;"
+                             data-background-image="./images/Azure_.png"
+                             data-background-size="550px"
+                             data-background-position="bottom left">
+                        <textarea data-template>
+                            ## [Infrastructure As Code]()
+                            L'infrastructure du SI se développe,
+                            se déploie et s'audite de la même manière qu'une application avec sa propre base de code
+
+                            Ce code décrit l'architecture physique et la topologie du Système d'Information
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center"
+                             style="text-align: left; color: black"
+                             data-background-color="#CC9948"
+                             data-background-image="./images/ansible_logo_round.png"
+                             data-background-size="600px"
+                             data-background-position="right">
+                        <textarea data-template>
+                            ### Provisionning
+                            ### Config Management
+                            Les installations applicatives reposent
+
+                            sur un outil d'automatisation
+
+                            fiable, simple et idempotent
+
+                            Procédural et déclaratif
+
+                            Agent-less, prérequis : SSH + Python
+
+                            Note: Ces scripts de déploiement ont leur propre base de code
+                            et suivent les méthodes d'ingénierie logiciel
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Intégration Continue
+                            La Plateforme d'Intégration Continue déclenche ses tâches sur demande ou sur événements :
+
+                            Clic depuis une IHM<!-- .element: class="fragment fade-right" -->
+
+                            Mise à jour de la base de code<!-- .element: class="fragment fade-right" -->
+
+                            Nouveau livrable externe<!-- .element: class="fragment fade-right" -->
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Intégration Continue
+                            Ces tâches compilent, packagent, testent et déploient de l'infrastructure ou des services applicatifs
+
+                            Aucune action n'est effectuée manuellement sur les serveurs cibles
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center" data-background-color="#CC9948">
+                        <textarea data-template>
+                            ### CI/CD une plateforme mutualisée
+                            ![](./images/devops-ci-cd-2.png "devops-ci-cd 2")<!-- .element: class="plain" -->
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center" data-background-color="#CC9948">
+                        <textarea data-template>
+                            ### Pipelines automatisés CI/CD
+                            ![](./images/devops-ci-cd-1.png "devops-ci-cd 1")<!-- .element: class="plain" -->
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center" data-background-color="#CC9948">
+                        <textarea data-template>
+                            ### Le déploiement
+                            ![](./images/devops-ci-cd-4.png "devops-ci-cd 4")<!-- .element: class="plain" -->
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center" data-background-color="#CC9948">
+                        <textarea data-template>
+                            ### ... jusqu'en production
+                            ![](./images/devops-ci-cd-3.png "devops-ci-cd 3")<!-- .element: class="plain" -->
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center" style="text-align: left;">
+                        <textarea data-template>
+                            ## Métriques
+                            - Provisonning
+                              - infrastructure : 30 min
+                              - applicatif : 20 min
+                            - 7 environnements logiques
+                            - 2242 ressources d'infrastructure dont 368 VMs
+                            - Plus de 7279 déploiements effectuées en 8 mois hors production
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### [Z]()ero [D]()owntime [D]()eployment
+                            DEV : stateless / support schéma N et N-1
+
+                            OPS : rolling update
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## The Twelve-Factor App
+                            Un ensemble de bonnes pratiques de développement qui peut être vu comme
+                            un contrat entre les DEV et OPS facilitant le déploiement et l'exploitabilité des applications
+
+                            https://12factor.net
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## GitFlow
+                            Un modèle de branching riche répondant aux besoins du cycle de vie d'une application
+
+                            https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+                        </textarea>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Étymologie
+                            Contraction de 2 termes anglais :
+
+                            [developper]() et [operations]()
+
+                            Définissant deux acteurs avec des périmètres et objectifs distincts<!-- .element: class="fragment fade-right" -->
+                        </textarea>
+                    </section>
+
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Définition
+
+                            > Le devops est un mouvement en ingénierie informatique
+                            > et une pratique technique visant à l'unification du développement logiciel (dev)
+                            > et de l'administration des infrastructures informatiques (ops),
+                            > notamment l'administration système.
+
+                            Source : https://fr.wikipedia.org/wiki/Devops
+                        </textarea>
+                    </section>
+
+
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Notre définition
+                            DevOps est une extension des méthodes AGILE amenant l'ingénierie logicielle jusqu'à l'exploitation.
+                        </textarea>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### C'est avant tout
+                            ## une [CULTURE]()
+                            ## et de l'[ORGANISATION]()
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Culture
+                            Culture de collaboration entre les deux acteurs sur la chaîne de développement
+                            depuis la conception à la mise en production et au support.
+
+                            Le terrain d'entente entre les acteurs dépasse la procédure d'installation
+                        </textarea>
+                    </section>
+                    <section>
+                        <h2>Organisation</h2>
+                        <p>Une équipe orientée produit autonome sur son périmètre : <a>design</a>, <a>build</a>, <a>run</a></p>
+                        <p class="fragment fade-right">Une rupture dans l'organisation traditionnelle entre les acteurs</p>
+                        <p class="fragment fade-right">Avancer dans une <a>direction</a> avec un <a>objectif</a> commun</p>
+                    </section>
+                    <section>
+                        <img class="plain" src="./images/orga-devops-octo.png" width="70%" height="70%" />
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Le périmètre de la démarche
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Architecture
+                            L'architecture des solutions doit assurer la sûreté de fonctionnement du système, inclure des mécanismes de résilience,
+                            et autoriser le passage à l'échelle (scalabilité horizontale) éventuellement sans intervention humaine.
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Développement
+                            Le développement doit intégrer au plus tôt les contraintes et bonnes pratiques poussées par les équipes d'exploitation.
+                            Il doit bien sûr respecter les contraintes d'architecture définies ci-dessus.
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Intégration continue
+                            Chaque modification du gestionnaire de source provoque la fabrication du logiciel,
+                            l'exécution les batteries de tests unitaires et provoque le déclenchement des outils de qualimétrie.
+                            L'intégration continue s'intéresse à la qualité intrinsèque du code.
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Tests automatisés
+                            Les tests fonctionnels doivent être entièrement automatisés
+                            afin de déployer en continu jusqu'à la production de manière fluide
+                            sans imposer le gaspillage induit par la recette manuelle complète du système
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Déploiement continu
+                            Le déploiement continu prolonge le périmètre de l'intégration continue jusqu'à l'installation de l'application sur les différents environnements.
+                            Suivant le degré de maturité des DSI, il peut aller jusqu'à l'installation sur l'environnement de production.
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Observabilité
+                            Toutes les métriques (performance, affluence, nombre d'incidents, statiques d'utilisation, etc.) doivent être suivies avec attention,
+                            elles doivent être analysées et participent au cycle d'amélioration continue.
+                        </textarea>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Attention, ça va [choquer]()
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## [You build it, you run it]()
+                            Avec l'autonomie, vient la responsabilité
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            Comprendre et accepter que vous puissiez faire des erreurs
+                            ## _[Je n'ai pas échoué,]()_<!-- .element: class="fragment" data-fragment-index="1" -->
+                            #### _J'ai juste trouvé 10 000 moyens qui ne fonctionnent pas._<!-- .element: class="fragment" data-fragment-index="1" -->
+                            #### _- Thomas Edison_<!-- .element: class="fragment" data-fragment-index="1" -->
+                        </textarea>
+                    </section>
+                        <section data-markdown class="center">
+                            <textarea data-template>
+                               ### En DevOps c'est normal de faire des [erreurs]()
+                            </textarea>
+                        </section>
+                    <section data-markdown class="center">
+                        <script type="text/template">
+                            #### On se donne le droit à l'erreur
+                            #### Parcequ'on est en capacité de rebondir <!-- .element: class="fragment" -->
+                            #### Autant le faire tôt et rapidement <!-- .element: class="fragment" -->
+                            ## [Fail Fast, fail often]() <!-- .element: class="fragment" -->
+                        </script>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### Une Mise En Production est un  [non événement]()
+                        </textarea>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Les pièges
+                            ### et
+                            ## les anti patterns
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## DevOps = No Ops
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Un DEV/OPS mutualisé sur plusieurs produits
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ### _L'outillage va résoudre mes problèmes de culture et d'organisation_
+                            [Ne réduisez pas la démarche à de l'automatisation]()
+                        </textarea>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            ## Think [BIG](), start small
+                        </textarea>
+                    </section>
+                    <section data-markdown class="center">
+                        <textarea data-template>
+                            #### Quelle est votre culture et quel est votre organisation ?
+                            #### [Quels sont les candidats pour former un équipe DevOps ?]()
+                            #### Quelles sont les initiaves lancées ?
+                        </textarea>
+                    </section>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

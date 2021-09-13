@@ -1,0 +1,10 @@
+= DevOps presentation
+
+== Print to PDF
+
+----
+docker build -t revealjs .
+docker run --rm -p 8000:8000 revealjs
+----
+
+http://192.168.99.100:8000/?print-pdf
